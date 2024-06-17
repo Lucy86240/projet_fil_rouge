@@ -53,3 +53,40 @@ p{
         justify-content: center;
     }
 }
+
+.text-justify{
+    text-align: justify;
+}
+
+.image-card{
+    //pour que le titre soit SEULEMENT par dessus l'image 
+    position : relative;
+
+    &:hover{
+        .title-image{
+            opacity : 1;
+        }
+        .img{
+            filter: brightness(0.3);
+        }
+    }
+
+    img{
+        transition : all 0.3s;
+    }
+
+    .title-image{
+        //pour que le titre soit par dessus l'image
+        position : absolute;
+
+        //pour que le titre soit centré
+        top:50%;
+        left:50%;
+        //permet d'enlever 50% de sa taille à sa position (sinon la 1ere lettre se positionne au centre)
+        transform: translate(-50%,-50%);
+
+        opacity : 0;
+
+        transition : all 0.3s;
+    }
+}
