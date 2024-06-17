@@ -9,7 +9,7 @@ html{
 
 main{
     // pour que le main ne passe pas en dessous du footer
-    margin-bottom : 250px;
+    margin-bottom : 270px;
 }
 
 footer.footer{
@@ -28,6 +28,7 @@ p{
 
 .hero-scene{
     position: relative;
+    margin-bottom : 15px;
     &::before{
         content:"";
         position: absolute;
