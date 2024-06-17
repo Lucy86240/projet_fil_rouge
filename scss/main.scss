@@ -64,16 +64,17 @@ p{
     position : relative;
 
     &:hover{
-        .title-image{
+        .title-image, .action-image-buttons{
             opacity : 1;
         }
-        .img{
+        img{
             filter: brightness(0.3);
         }
     }
 
     img{
         transition : all 0.3s;
+        padding : 5px;
     }
 
     .title-image{
@@ -89,5 +90,31 @@ p{
         opacity : 0;
 
         transition : all 0.3s;
+    }
+
+    .action-image-buttons{
+        //pour que les icones soientt par dessus l'image
+        position : absolute;
+
+        //en haut à gauche
+        top:0;
+        left:0;
+
+        width:100%;
+        padding : 5px;
+        
+        display: flex;
+        justify-content: space-between;
+
+        opacity :0;
+        transition: all 0.3s;;
+    }
+}
+
+.allReservations{
+    a{
+        display : block;
+        color : $black;
+        padding : 10px;
     }
 }

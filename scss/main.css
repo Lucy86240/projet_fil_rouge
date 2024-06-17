@@ -12020,14 +12020,15 @@ p {
 .image-card {
   position: relative;
 }
-.image-card:hover .title-image {
+.image-card:hover .title-image, .image-card:hover .action-image-buttons {
   opacity: 1;
 }
-.image-card:hover .img {
+.image-card:hover img {
   filter: brightness(0.3);
 }
 .image-card img {
   transition: all 0.3s;
+  padding: 5px;
 }
 .image-card .title-image {
   position: absolute;
@@ -12036,4 +12037,21 @@ p {
   transform: translate(-50%, -50%);
   opacity: 0;
   transition: all 0.3s;
+}
+.image-card .action-image-buttons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.allReservations a {
+  display: block;
+  color: #292222;
+  padding: 10px;
 }/*# sourceMappingURL=main.css.map */
